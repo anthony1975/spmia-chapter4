@@ -53,6 +53,7 @@ public class LicenseService {
                 organization = organizationRestClient.getOrganization(organizationId);
         }
 
+        System.out.println("Organization :"+organizationId+"@"+(organization==null?"Null":organization.getName()));
         return organization;
     }
 
